@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+        body {
+            margin:0cm;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: #201b2c;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+        .left{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            flex-direction: column;
+        }
+        .right{
+            width: 50vw;
+            height: 100vh;
+            background-color: #201b2c;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            
+        }
+        .left > h1{
+            color : #77ffc0;
+        }
+        .card {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 35px;
+            background: #2f2841;
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px #00000056;
+        }
+        .card > h1 {
+            color:#00ff88 ;
+            margin: 0cm;
+            font-weight: 800;
+        }
+        .textfield{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 10px 0px;
+        }
+        .textfield > input {
+            width: 100%;
+            border: none ;
+            border-radius: 10px;
+            padding: 15px;
+            background: #514868 ;
+            color:#f0ffffde ;
+            font-size: 12 pt;
+            box-shadow: 0px 10px 40px #00000056;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .textfield > label {
+            color: #f0ffffde;
+            margin-bottom: 10px ;
+        }
+        .textfield > input::placeholder{
+            color: #f0ffff94;
+        }
+        .BTNlogin {
+            width: 100%;
+            padding: 16px 0px;
+            margin: 25px;
+            border: none;
+            border-radius: 8px;
+            text-transform: uppercase ;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: #2b134b;
+            background: #00ff88;
+            cursor: pointer;
+            box-shadow: 0px 10px 40px -12px #00ff8052;
+        }
+        .BTNlooking {
+            width: 100%;
+            padding: 16px 0px;
+            margin: 25px;
+            border: none;
+            border-radius: 8px;
+            text-transform: uppercase ;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: #2b134b;
+            background: gold;
+            cursor: pointer;
+            box-shadow: 0px 10px 40px -12px #00ff8052;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>
+                Faça seu login aqui 
+            </h1>
+        </div>
+        <div class="right">
+            <div class="card">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="Usuário">Usuário</label>
+                    <input type="text" name="Usuário" placeholder="Usuário" id="user"/>
+                </div>
+                <div class="textfield">
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="passwd" placeholder="Senha" />
+                </div>
+                <button class="BTNlogin" id="BTNlogin"> Login </button>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        
+        function startUSR(){
+            var usr = document.getElementById('user') ;
+            usr.focus();
+        }
+        function wFButton(){
+            if(btn.className == 'BTNlogin') {
+                btn.className = 'BTNlooking' ;
+            }else{
+                btn.className = 'BTNlogin' ;
+            }
+           
+        }
+        var btn = document.getElementById('BTNlogin');
+        window.addEventListener('load', startUSR, false );
+        btn.addEventListener('click', wFButton, false);
+
+    </script>
+</body>
+</html>
