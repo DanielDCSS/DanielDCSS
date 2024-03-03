@@ -1,0 +1,80 @@
+@font-face {
+font-family: 'fontteste';
+src: url(../css/Baralikto.otf);
+}
+body {
+    background-color:burlywood;
+    font-family:Georgia, Times, serif;
+    font-size: 16px;
+
+}
+h1{
+    color:rgba(0, 0, 0, 0.9);
+    font-family:'Courier New', Courier, monospace; 
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+
+}
+h2{
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: oblique;
+}
+h3{
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: oblique;
+}
+p {
+    color: rgba(0, 0, 0, 0.77);
+    font-family:Georgia, Times, serif;
+    line-height: 1.5em;
+}
+.Rotas{
+    color:rgb(43, 34, 34);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+#tituloP{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-style: oblique;
+    font-weight: normal;
+}
+/*#link{
+    text-decoration: none;
+    color:brown;
+}*/
+#main{
+    color:rgba(0, 0, 0, 0.9);
+    /* font-family:'Courier New', Courier, monospace; */
+    font-family:fontteste;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+}
+a:link{
+    text-decoration: none;
+    color: brown;
+    font-style: italic;
+}/* ver melhor a questão da cor */
+a:visited{
+    text-decoration: none;
+    color:brown;
+    font-style: normal;
+
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+    
+}
+a:focus{
+    text-decoration: underline;
+    color: gray;
+} 
