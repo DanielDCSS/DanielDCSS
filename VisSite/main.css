@@ -1,0 +1,69 @@
+body {
+    background-color:#d8d989;
+    
+}
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #493d3f ;
+}
+p{
+    color:#493d3f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+}
+h1.titulo{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.familia{
+    border-color:#bdb495 ;
+    border-width: 0.1cm;
+    border-style: solid;
+    position:relative;
+    background:#f8f2ce;
+    padding: 10px;
+   
+}
+div.codigo{
+    border-color:#020202 ;
+    border-width: 0.1cm;
+    border-style: solid;
+    position:relative;
+    background:#493d3f;
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+p.cod{
+    color: #f8f2ce;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.saida{
+    color: #020202;
+    padding: 0cm;
+    font-size: small;
+}
+p.Mudado {
+    color:green;
+}
+p.smod3 {
+    color :aliceblue ;
+}
+p.smod2{
+    color:aqua ;
+}
+/* .color1 { #020202 }; preto
+.color2 { #493d3f }; cinza
+.color3 { #bdb495 }; bege
+.color4 { #f8f2ce }; branco
+.color5 { #d8d989 };  limão*/ /* cores da paleta */

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Pagina de teste
+    </title>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="titulo"> >Página de testes para algoritmos javascript<</h1>
+    <h4>Aqui serão rodados algoritmos direto no interpretador do navegador</h4>
+    <h1 class="titulo"> Condicionais</h1>
+    <div class="familia">
+        <div class="expressao">
+            <h2> Sentenças lógicas e expressões condicionais :</h2>
+            <p> 
+                As expressões condicionais em Javascript podem ser escritas com as seguinte expressão geral (EXP OP EXPP) link (EXP OP EXPP) ou por exemplo
+                (score >= minimo), (pontuação == rifa) && (dia <= target). 
+            </p>
+            <p>
+                Os operadores lógicos são && : e, || : ou, ! : not. Também temos os operadores tradicionais == : igual, != : diferente, === : estritamente igual, !== :
+                estritamente diferente, > : maior que, < : menor que, <= : menor ou igual, >= : maior ou igual.
+            </p>
+            
+        </div>
+        <div class="expressao">
+            <h2> Sentenças do tipo else if:</h2>
+            <p>
+                Sentenças desse tipo são usadas para filtar oque acontece a depender do desenrolar do código. No javascript o if pode ser usado indenpendente do else,
+                com sendo falsa a proposição dentro do if, levando ao código apenas continuar sendo lido pelo interpretador (ignorando oque está dentro do IF). A 
+                sintaxe do if em javascript é a seguinte : 
+
+            </p>
+            <div class="codigo">
+                <p class="cod">
+                    if ( a op b) { <br> conteudo ; <br> } <br> <br> exmeplo prático: <br><br>function parabens(){<br> console.log('parabéns'); <br>} 
+                    <br> <br> if (score >= min) {<br> parabens(); <br>}
+                </p>
+            </div>
+            <p>
+                Aqui está o resoldado de um programa javascript rodando no interpretador, pode ve-lo no html da página : 
+            </p>
+            <script>
+                var score = 50 ;
+                var min = 20 ;
+                function parabens(){
+                    document.write('<p class="saida">"Parabéns, esse é o resultado !!! "</p>');
+                    document.write('<p class="saida">',document.title,'</p>' ,'<p class="saida">',document.domain,'</p>');
+                }
+                if (score >= min ) {
+                    parabens();
+                }
+
+            </script>
+        </div>
+        <div class="expressao">
+            <h2>Sentenças com else</h2>
+            <p>
+                Quando você coloca o else você faz com que ele execute algo quando o valor da expressão lógica no if é de falso. A sintaxe do else/if e um exemplo 
+                prático seguem abaixo, junto com a saida de um programa executado no interpretador:
+            </p>
+            <div class="codigo">
+                <p class="cod">
+                    if ( a op b) { <br> conteudo ; <br> } else { <br> conteudo2 ; <br>} <br> <br> exemplo prático<br><br>function parabens(){<br> console.log('parabéns'); <br>} 
+                    <br> <br>function fail(){<br> console.log('fail'); <br>} <br> if (score >= min) {<br> parabens(); <br>} else { <br> fail(); <br>}
+                </p>
+            </div>
+            <script>
+                var score = 20 ;
+                var min = 50 ;
+                function parabens(){
+                    document.write('<p class="saida">"Parabéns, esse é o resultado !!! "</p>');
+                    document.write('<p class="saida">',document.title,'</p>' ,'<p class="saida">',document.domain,'</p>');
+                }
+                function fail(){
+                    document.write(' <p class="saida">"Uma pena, esse é o resultado !!! "</p> ') ;
+                }
+                if (score >= min ) {
+                    parabens();
+                }else{
+                    fail();
+                }
+
+            </script>
+        </div>
+        <div class="expressao">
+            <h2>Sentenças com switch</h2>
+            <p>
+                As sentenças com switch são análogas ao elif do python. Elas são praticas de serem usadas quando apenas um conjunto discreto e finito de valores para
+                uma dada variável importam para decidir que código vai rodar. Para algo fora desse conjunto usa-se a opção <i> default</i>. A sintaxe do 
+                switch é da segunte forma, logo abaixo vem a saida de um script com ele. 
+            </p>
+            <div class="codigo">
+                <p class="cod">
+                    var id = valor ; <br>
+                    switch(id){<br>
+                        case 1 :<br>
+                        document.write('1');<br>
+                        break ;<br><br>
+                    case 2 :<br>
+                        document.write('2');<br>
+                        break ;<br><br>
+                    case 3 :<br>
+                        document.write('3');<br>
+                        break ;<br><br>
+                    default :<br>
+                        document.write('Nenhum desses');<br>
+                        break;<br><br>
+                    }<br>
+                </p>
+            </div>
+            <script>
+                var id = 3 ;
+                switch(id){
+                    case 1 :
+                        document.write('1');
+                        break ;
+                    case 2 :
+                        document.write('2');
+                        break ;
+                    case 3 :
+                        document.write('3');
+                        break ;
+                    default :
+                        document.write('Nenhum desses');
+                        break;
+                }
+            </script>
+
+        </div>
+    </div>
+    <h1 class="titulo"> Loops</h1>
+    <div class="familia">
+        <div class="expressao">
+                <h2>Loop for</h2>
+                <p>
+                    O loop for é usado quando é conhecido o número de iterações que o loop deseja dar. Para usar esse loop parte de oque escrevemos é <i> for (exp)</i>
+                    essa ecpressão <i>exp</i> pode ser sempre divida como : (inicializador da variável, condição para que o loop repita, argumento de incrementação da
+                    variável). Sintaxe com exemplo :    
+                </p>
+                <div class="codigo">
+                    <p class="cod">
+                        for (var i = 0; i<=10 ; i++){<br>
+                        document.write(i);<br>
+                        }
+                    </p>
+                </div>
+        </div>
+        <script>
+            for ( var i = 0 ; i <= 30; i++){
+                for ( var j = 0 ; j <= i ; j++){
+                    document.write(j);
+                }
+                document.write('<br>');
+            }
+        </script>
+        
+    </div>
+    <h1 class="titulo"> DOM tree</h1>
+    <div class="familia">
+        <div class="expressao">
+            <h2>DOM tree</h2>
+        <p>
+            Aqui vamos testar as propriedades de refernciamento através do document object.
+        </p>
+        <p id="smod">
+            Aqui nada mudou
+        </p>
+        <script>
+            var ele = document.getElementById('smod') ;
+            ele.className = 'Mudado';
+            ele.textContent = ' A mudança funcionou';
+        </script>
+        <p class="smod2">
+            Aqui nada mudou
+        </p>
+        <p class="smod2">
+            Aqui nada mudou
+        </p>
+        <p class="smod2">
+            Aqui nada mudou
+        </p>
+        <p class="smod2">
+            Aqui nada mudou
+        </p>
+        <script>
+            var arr = document.querySelectorAll('p.smod2');
+            if ( arr.length > 0){
+                for ( var i = 0 ; i<arr.length ; i++) {
+                    arr[i].className = 'smod3' ;
+                    arr[i].textContent = 'Alterado' ;
+            }
+            document.write(arr.length) ;
+        }
+        </script>
+        </div>
+        <div class="expressao" id="esp">
+            <h2> Propriedades de alteração de nós da DOM Tree</h2>
+            <p>
+                Os principais conteúdos para essa finalidade são a propriedade  <i> inerhtml </i> e os métodos referentes a criação de destruição de nós na DOM tree.
+                Aqui abaixo vão eles listados : <br>
+                <i> createElement() :: createTextNode() :: appendChild()</i>
+            </p>
+            <p id="fin">
+                Aqui um texto
+            </p>
+            <script>
+                var nOBJ = document.createElement('p');
+                var nTexto = document.createTextNode('Aqui o novo texto inserido pelo método da DOM manipulção');
+                nOBJ.appendChild(nTexto);
+                var place = document.getElementById('esp');
+                place.appendChild(nOBJ);
+                var Targ = document.getElementById('fin');
+                Targ.innerHTML = 'Mudado pelo innerhtml';
+            </script>
+            
+        </div>
+        <div class="expressao">
+            <h2>Eventos</h2>
+            <p> Aqui vamos usar a dinâmica de eventos no javascript para tentar criar coisas que funcionam</p>
+            <form>
+                <label for="username">Nome do usuário :</label>
+                <input type="text" id="username" />
+                <div id="resp"></div>
+                <label for="senha">Coloque a senha : </label>
+                <input type="text" id="senha" />
+                <input type="submit" value="enviar" />
+            </form>
+            <script>
+                function CheckUsername() {
+                    var elResp = document.getElementById('resp');
+                    if(this.value.length < 5){
+                        elResp.textContent = 'Número de caracteres insulficiente' ;
+
+                    }else{
+                        elResp.textContent = '';
+                    }
+                }
+                function setup(){
+                    var Usr = document.getElementById('username');
+                    Usr.focus();
+                }
+                var Usr = document.getElementById('username');
+                /*Usr.onblur = CheckUsername ; */
+                Usr.addEventListener('blur', CheckUsername, false);
+                window.addEventListener('load', setup, false );
+
+
+            </script>
+        </div>
+    </div>
+
+</body>
